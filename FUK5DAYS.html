@@ -433,7 +433,7 @@
 
 <header>
   <h1>福岡 5天4夜 自由行行程</h1>
-  <p>🍁 11月下旬紅葉特別版 ‧ 時序地圖 ‧ 精選店家清單</p>
+  <p>🍁 11月下旬紅葉特別版 ‧ 時序地圖 ‧ 精選地點與店家清單</p>
   <div>
     <span class="flight-badge">去程：11/22 CI110 (09:55抵達)</span>
     <span class="flight-badge">回程：11/26 CI117 (21:00起飛)</span>
@@ -459,7 +459,7 @@
     <label class="tab-label" for="tab-d3">Day 3 (11/24)</label>
     <label class="tab-label" for="tab-d4">Day 4 (11/25) 🍁</label>
     <label class="tab-label" for="tab-d5">Day 5 (11/26) 🍁</label>
-    <label class="tab-label" for="tab-shops">📍 精選店家</label>
+    <label class="tab-label" for="tab-shops">📍 精選店家/景點</label>
   </div>
 
   <div class="map-card">
@@ -641,36 +641,49 @@
 
         <!-- SHOPS TAB MAP -->
         <g id="map-layer-shops" class="day-map-layer">
-          <rect x="190" y="55" width="400" height="230" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
-          <text x="390" y="80" font-size="12" font-weight="bold" fill="#1e3a8a" text-anchor="middle">博多・祇園・住吉 飯店步行生活圈相對位置</text>
+          <rect x="70" y="42" width="640" height="260" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+          <text x="390" y="68" font-size="12" font-weight="bold" fill="#1e3a8a" text-anchor="middle">福岡市區 精選店家與跑旅・庭園相對位置</text>
 
-          <!-- Connecting lines -->
-          <path d="M 380,150 L 330,225" stroke="#f59e0b" stroke-width="3" stroke-dasharray="4 3"/>
-          <path d="M 380,150 L 460,120" stroke="#059669" stroke-width="3" stroke-dasharray="4 3"/>
-          <path d="M 380,150 L 510,165" stroke="#dc2626" stroke-width="3" stroke-dasharray="4 3"/>
+          <!-- Connecting lines from Hotel (460, 145) -->
+          <path d="M 460,145 L 405,215" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <path d="M 460,145 L 555,105" stroke="#059669" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <path d="M 460,145 L 575,165" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <path d="M 460,145 L 455,260" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <!-- Metro Kuko Line to Ohori Park -->
+          <path d="M 442,145 L 250,145" stroke="#0284c7" stroke-width="3" stroke-dasharray="6 3"/>
+          <text x="345" y="138" font-size="9" font-weight="bold" fill="#0284c7" text-anchor="middle">地鐵空港線約 9 分鐘</text>
 
           <!-- Hotel Center -->
-          <circle cx="380" cy="150" r="18" fill="#1e3a8a" stroke="#ffffff" stroke-width="2"/>
-          <text x="380" y="154" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">飯店</text>
-          <text x="380" y="180" font-size="9.5" font-weight="bold" fill="#1e3a8a" text-anchor="middle">塔樓飯店 (川端通/冷泉公園旁)</text>
+          <circle cx="460" cy="145" r="17" fill="#1e3a8a" stroke="#ffffff" stroke-width="2"/>
+          <text x="460" y="149" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">飯店</text>
+          <text x="460" y="174" font-size="9" font-weight="bold" fill="#1e3a8a" text-anchor="middle">塔樓飯店 (川端通旁)</text>
 
           <!-- Shop 1: 博多鶏soba 建 TATERU -->
-          <rect x="220" y="218" width="175" height="28" rx="6" fill="#f59e0b"/>
-          <text x="233" y="236" font-size="11" font-weight="bold" fill="#ffffff">❶</text>
-          <text x="313" y="236" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">博多鶏soba 建 TATERU</text>
-          <text x="307" y="260" font-size="9" fill="#92400e" text-anchor="middle">住吉1-6-8 (運河城/樂水園旁)</text>
+          <rect x="285" y="205" width="165" height="26" rx="6" fill="#f59e0b"/>
+          <text x="297" y="222" font-size="10.5" font-weight="bold" fill="#ffffff">❶</text>
+          <text x="372" y="222" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">博多鶏soba 建 TATERU</text>
 
           <!-- Shop 2: MaxValu Express Hakata Gion -->
-          <rect x="425" y="102" width="150" height="28" rx="6" fill="#059669"/>
-          <text x="438" y="120" font-size="11" font-weight="bold" fill="#ffffff">❷</text>
-          <text x="505" y="120" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">MaxValu Express 祇園</text>
-          <text x="500" y="142" font-size="9" fill="#065f46" text-anchor="middle">祇園町7-20 (24H超市)</text>
+          <rect x="520" y="90" width="150" height="26" rx="6" fill="#059669"/>
+          <text x="532" y="107" font-size="10.5" font-weight="bold" fill="#ffffff">❷</text>
+          <text x="600" y="107" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">MaxValu Express 祇園</text>
 
           <!-- Shop 3: 島本明太子 -->
-          <rect x="445" y="160" width="135" height="28" rx="6" fill="#dc2626"/>
-          <text x="458" y="178" font-size="11" font-weight="bold" fill="#ffffff">❸</text>
-          <text x="517" y="178" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">島本明太子 博多站前</text>
-          <text x="512" y="200" font-size="9" fill="#991b1b" text-anchor="middle">御供所町2-63 (祇園站旁)</text>
+          <rect x="535" y="152" width="145" height="26" rx="6" fill="#dc2626"/>
+          <text x="547" y="169" font-size="10.5" font-weight="bold" fill="#ffffff">❸</text>
+          <text x="612" y="169" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">島本明太子 博多站前</text>
+
+          <!-- Spot 4: 大濠公園 (Ohori Park) -->
+          <rect x="95" y="130" width="155" height="32" rx="8" fill="#0284c7"/>
+          <text x="108" y="150" font-size="11" font-weight="bold" fill="#ffffff">❹</text>
+          <text x="178" y="150" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">🏃 大濠公園 (一圈約2km)</text>
+          <text x="172" y="176" font-size="9" fill="#0369a1" text-anchor="middle">中央區大濠公園1 (跑者聖地)</text>
+
+          <!-- Spot 5: 樂水園 (Rakusuien) -->
+          <rect x="370" y="254" width="175" height="30" rx="8" fill="#7c3aed"/>
+          <text x="383" y="273" font-size="11" font-weight="bold" fill="#ffffff">❺</text>
+          <text x="462" y="273" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">🍁 樂水園 (古色古香茶席)</text>
+          <text x="457" y="296" font-size="9" fill="#5b21b6" text-anchor="middle">住吉2-10-7 (喧囂中帶有寧靜)</text>
         </g>
       </svg>
     </div>
@@ -720,9 +733,11 @@
       </div>
 
       <div id="legend-shops" class="legend-items day-legend">
-        <span class="legend-item"><span class="badge-num" style="background:#f59e0b;">❶</span> 博多鶏soba 建 TATERU (拉麵)</span>
-        <span class="legend-item"><span class="badge-num" style="background:#059669;">❷</span> MaxValu Express 祇園 (24H超市)</span>
-        <span class="legend-item"><span class="badge-num" style="background:#dc2626;">❸</span> 島本明太子 博多站前店 (伴手禮)</span>
+        <span class="legend-item"><span class="badge-num" style="background:#f59e0b;">❶</span> 博多鶏soba 建 TATERU</span>
+        <span class="legend-item"><span class="badge-num" style="background:#059669;">❷</span> MaxValu Express 祇園</span>
+        <span class="legend-item"><span class="badge-num" style="background:#dc2626;">❸</span> 島本明太子 博多站前店</span>
+        <span class="legend-item"><span class="badge-num" style="background:#0284c7;">❹</span> 大濠公園 (跑者聖地/一圈約2km)</span>
+        <span class="legend-item"><span class="badge-num" style="background:#7c3aed;">❺</span> 樂水園 (古色古香/喧囂中帶寧靜)</span>
       </div>
     </div>
   </div>
@@ -1084,7 +1099,7 @@
 
         <div class="page-footer-nav">
           <label class="sub-label-btn" for="tab-d4">⬅ Day 4</label>
-          <label class="sub-label-btn" for="tab-shops">📍 精選店家清單 ➔</label>
+          <label class="sub-label-btn" for="tab-shops">📍 精選店家/景點 ➔</label>
         </div>
       </div>
     </div>
@@ -1093,8 +1108,8 @@
     <div id="page-shops" class="day-page">
       <div class="card">
         <div class="day-header">
-          <h2>📍 精選店家清單（飯店周邊美食・超市・伴手禮）</h2>
-          <span>博多 / 祇園 / 住吉生活圈</span>
+          <h2>📍 精選店家與景點清單（美食・超市・伴手禮・跑旅・庭園）</h2>
+          <span>福岡市區收藏清單</span>
         </div>
 
         <div class="shop-card">
@@ -1139,6 +1154,38 @@
           <div class="transit-metro-box">
             <span class="transit-tag tag-metro">順遊與交通</span>
             距離塔樓飯店步行約 5 分鐘（鄰近祇園站）。主打使用國產鱈魚卵製作的辛子明太子與招牌「明太子美乃滋」，適合在 <strong>Day 5 下午 17:30 回飯店取行李返台前</strong>順道採購（留意冷藏商品需搭配保冷袋並置於托運行李中）。
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-card-header">
+            <div class="shop-title">❹ 大濠公園 (Ohori Park)</div>
+            <span class="shop-cat-badge" style="background:#e0f2fe; color:#0369a1;">🏃 跑者聖地 ‧ 一圈約 2 公里</span>
+          </div>
+          <div class="shop-meta">
+            <div><strong>📍 地址：</strong>福岡市中央區大濠公園 1</div>
+            <div><strong>🕒 開放時間：</strong><strong>24 小時開放</strong>（公園內日本庭園為 09:00–17:00，週一休園）</div>
+            <div><strong>✨ 特色亮點：</strong><strong>跑者聖地，環湖跑道一圈約 2 公里</strong>。設有專屬橡膠緩震跑道、單車道與行人步道分流，路面平坦且沿途水岸風景開闊，無論晨跑或傍晚慢跑都非常舒適。</div>
+          </div>
+          <div class="transit-metro-box">
+            <span class="transit-tag tag-metro">順遊與交通</span>
+            從祇園站或中洲川端站搭乘<strong>地鐵空港線直達「大濠公園站」</strong>（車程約 7–9 分鐘），出站步行 2–3 分鐘即達環湖起點，可結合 <strong>Day 4 下午行程</strong>或安排晨間慢跑。
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-card-header">
+            <div class="shop-title">❺ 樂水園 (Rakusuien)</div>
+            <span class="shop-cat-badge" style="background:#f3e8ff; color:#6b21a8;">🍁 古色古香 ‧ 喧囂中帶有寧靜</span>
+          </div>
+          <div class="shop-meta">
+            <div><strong>📍 地址：</strong>福岡市博多區住吉 2-10-7（博多站與運河城步行圈內）</div>
+            <div><strong>🕒 營業時間：</strong>09:00–17:00（<strong>週二公休</strong>）</div>
+            <div><strong>✨ 特色亮點：</strong><strong>古色古香，喧囂中帶有寧靜</strong>的池泉迴遊式日式庭園。隱身於博多繁華市中心，擁有傳統博多塀土牆、水琴窟與茶室「樂水庵」，可一邊品嚐抹茶與和菓子，一邊靜賞紅葉倒映水池的雅緻景致。</div>
+          </div>
+          <div class="transit-metro-box">
+            <span class="transit-tag tag-metro">順遊與交通</span>
+            從塔樓飯店步行約 10–12 分鐘可達（緊鄰住吉神社與博多運河城），已排入 <strong>Day 5 上午 10:00–12:00</strong> 的賞楓茶席行程。
           </div>
         </div>
 
